@@ -9,7 +9,7 @@ use steganography::decoder::*;
 use steganography::util::*;
 use std::io::Read;
 use clap::{Arg, App, SubCommand};
-use clap::Arg::any_arg::AnyArg;
+
 
 fn main() {
     let app = App::new("cl_stegan")
@@ -17,7 +17,6 @@ fn main() {
             .about("encodes an image, either from the web or your files, with a hidden message")
             .version("0.0.1")
             .author("Von Mbah <vonchude@gmail.com>")
-            .short("e")
             .arg(Arg::with_name("from")
                 .value_name("FROM")
                 .required(true)))
@@ -35,13 +34,13 @@ fn encode(input: String, message: String, output:String ){
     save_image_buffer(result, output.trim().to_string());
 }
 
-fn decode(input: String) -> &str {
+fn decode(input: String) -> String {
     let encoded_image = file_as_image_buffer(input.trim().to_string());
     let dec = Decoder::new(encoded_image);
     let out_buff= dec.decode_alpha();
 
     let clean_filt: Vec<u8> = out_buff.into_iter().filter(|p| {*p != 0xff_u8}).collect();
-    let message = bytes_to_str(clean_filt.as_slice());
-    message
+    String::from_utf8(clean_filt).unwrap()
+
 
 }
