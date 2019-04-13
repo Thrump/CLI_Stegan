@@ -1,0 +1,10 @@
+[package]
+name = "cl_stegan"
+version = "0.1.0"
+authors = ["Von Surface Pro"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+steganography = "*"
+reqwest = "*"
