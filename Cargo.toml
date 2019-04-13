@@ -1,5 +1,5 @@
 [package]
-name = "cl_stegan"
+name = "cli_stegan"
 version = "0.1.0"
 authors = ["Von Surface Pro"]
 edition = "2018"
