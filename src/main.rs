@@ -55,6 +55,8 @@ fn main() -> std::io::Result<()> {
 
             encode("dummy.jpg".to_string(), message, out);
 
+            fs::remove_file("dummy.jpg").expect("failed to delete file");
+
 
         }else if format.to_lowercase() == "file" || format.to_lowercase() == "f" {
             println!("Enter in the file: ");
