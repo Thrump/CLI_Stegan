@@ -11,7 +11,7 @@ use cli_stegan::util::*;
 use std::fs;
 
 fn main() -> std::io::Result<()> {
-    let app = App::new("cl_stegan")
+    let app = App::new("stegan")
         .author("Von Mbah <vonchude@gmail.com>")
         .version("0.0.1")
         .about("A command line interface for decoding and encoding images with hidden messages.")
