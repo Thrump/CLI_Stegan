@@ -3,6 +3,7 @@ A command line interface for encoding and decoding images with messages.
 
 ## Features
 **Encodes** images with a hidden message
+
 **Decodes** images with a hidden message and then prints it out.
 
 
