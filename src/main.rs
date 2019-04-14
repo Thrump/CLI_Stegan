@@ -42,22 +42,6 @@ fn main() -> std::io::Result<()> {
             let image_link = string_format1.trim();
             let mut resp = reqwest::get(image_link).expect("request failed");
 
-//
-//            println!("Enter in a location for the file: ");
-//            let mut string_format2 = String::new();
-//            io::stdin().read_line(&mut string_format2)?;
-//            let location = string_format2.trim();
-//
-//
-//
-//            println!("Enter in file name: ");
-//            let mut string_format3 = String::new();
-//            io::stdin().read_line(&mut string_format3)?;
-//            let file = string_format3.trim();
-//
-//            let mut path = location.to_string() + file;
-
-
             let mut creation = File::create("dummy.jpg").expect("failed to create a file");
             io::copy(&mut resp, &mut creation).expect("failed to copy content");
 
