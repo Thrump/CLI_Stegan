@@ -6,7 +6,7 @@ use std::io;
 use std::fs::File;
 use clap::{Arg, App};
 
-use cli_stegan::util::*;
+use stegan::util::*;
 
 use std::fs;
 
