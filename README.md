@@ -9,12 +9,12 @@ A command line interface for encoding and decoding images with messages.
 
 ## Usage
 ```
-cl_stegan 0.0.1
+Stegan 0.0.1
 Von Mbah <vonchude@gmail.com>
 A command line interface for decoding and encoding images with hidden messages.
 
 USAGE:
-    cli_stegan.exe [FLAGS]
+    stegan.exe [FLAGS]
 
 FLAGS:
     -d, --decode     Decodes an image with a hidden message.
