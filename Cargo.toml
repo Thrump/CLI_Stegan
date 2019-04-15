@@ -1,8 +1,16 @@
 [package]
 name = "stegan"
-version = "0.1.0"
-authors = ["Von Surface Pro"]
+version = "0.0.1"
+authors = ["Von Mbah <vonchude@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/Thrump/Stegan"
+homepage = "https://github.com/Thrump/Stegan"
+keywords = ["steganography", "cli"]
+description = " A command line interface for encoding and decoding images with messages"
+readme = "README.md"
+license = "MIT"
+
+
 
 [dependencies]
 clap = "2.33.0"
