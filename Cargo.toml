@@ -14,5 +14,5 @@ license = "MIT"
 
 [dependencies]
 clap = "2.33.0"
-steganography = "*"
-reqwest = "*"
+steganography = "1.0.1"
+reqwest = "0.9.14"
