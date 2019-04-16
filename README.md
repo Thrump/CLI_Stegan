@@ -1,4 +1,4 @@
-![Crates.io](https://img.shields.io/crates/v/stegan.svg)](https://crates.io/crates/stegan)
+[![Crates.io](https://img.shields.io/crates/v/stegan.svg)](https://crates.io/crates/stegan)
 
 # Stegan
 A command line interface for encoding and decoding images with messages.
