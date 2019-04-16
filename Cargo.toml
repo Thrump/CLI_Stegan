@@ -1,6 +1,6 @@
 [package]
 name = "stegan"
-version = "0.0.1"
+version = "0.0.5"
 authors = ["Von Mbah <vonchude@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/Thrump/Stegan"

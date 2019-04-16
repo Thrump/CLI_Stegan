@@ -13,7 +13,7 @@ use std::fs;
 fn main() -> std::io::Result<()> {
     let app = App::new("stegan")
         .author("Von Mbah <vonchude@gmail.com>")
-        .version("0.0.1")
+        .version("0.0.5")
         .about("A command line interface for decoding and encoding images with hidden messages.")
         .arg(Arg::with_name("encode")
             .help("Encodes an image with a hidden message.")
