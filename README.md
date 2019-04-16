@@ -8,6 +8,12 @@ A command line interface for encoding and decoding images with messages.
 
 **Decodes** images with a hidden message and then prints it out.
 
+## installation
+### Via Cargo
+```
+cargo install stegan
+```
+
 
 ## Usage
 ```
